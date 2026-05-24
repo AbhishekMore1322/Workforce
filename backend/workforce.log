@@ -1,0 +1,33 @@
+2026-05-24T14:12:03.342+05:30  INFO 1368 --- [workforce] [restartedMain] com.workforce.WorkforceApplication       : Starting WorkforceApplication using Java 21.0.6 with PID 1368 (D:\projects\workforce\backend\target\classes started by Omkar in D:\projects\workforce\backend)
+2026-05-24T14:12:03.352+05:30  INFO 1368 --- [workforce] [restartedMain] com.workforce.WorkforceApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-05-24T14:12:03.430+05:30  INFO 1368 --- [workforce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-24T14:12:03.430+05:30  INFO 1368 --- [workforce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-24T14:12:06.371+05:30  INFO 1368 --- [workforce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-24T14:12:06.748+05:30  INFO 1368 --- [workforce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 355 ms. Found 17 JPA repository interfaces.
+2026-05-24T14:12:09.872+05:30  INFO 1368 --- [workforce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9076 (http)
+2026-05-24T14:12:09.930+05:30  INFO 1368 --- [workforce] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-24T14:12:09.932+05:30  INFO 1368 --- [workforce] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-24T14:12:10.309+05:30  INFO 1368 --- [workforce] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-24T14:12:10.309+05:30  INFO 1368 --- [workforce] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6879 ms
+2026-05-24T14:12:11.624+05:30  INFO 1368 --- [workforce] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-24T14:12:11.767+05:30  INFO 1368 --- [workforce] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.44.Final
+2026-05-24T14:12:11.857+05:30  INFO 1368 --- [workforce] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-24T14:12:12.622+05:30  INFO 1368 --- [workforce] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-24T14:12:12.698+05:30  INFO 1368 --- [workforce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-24T14:12:13.273+05:30  INFO 1368 --- [workforce] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59fb16f2
+2026-05-24T14:12:13.277+05:30  INFO 1368 --- [workforce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-24T14:12:13.517+05:30  INFO 1368 --- [workforce] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.7
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-24T14:12:17.239+05:30  INFO 1368 --- [workforce] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-24T14:12:17.965+05:30  INFO 1368 --- [workforce] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-24T14:12:19.943+05:30  INFO 1368 --- [workforce] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-24T14:12:24.835+05:30  INFO 1368 --- [workforce] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-05-24T14:12:26.121+05:30  INFO 1368 --- [workforce] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-24T14:12:26.216+05:30  INFO 1368 --- [workforce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9076 (http) with context path '/'
+2026-05-24T14:12:26.240+05:30  INFO 1368 --- [workforce] [restartedMain] com.workforce.WorkforceApplication       : Started WorkforceApplication in 23.562 seconds (process running for 24.645)

@@ -1,0 +1,249 @@
+/* ============================================================
+   WORKFORCE — Auditor Dashboard  |  Violet × Coral palette
+   ============================================================ */
+
+:root {
+  --aud-brand:   #7c3aed;
+  --aud-dark:    #4f2fcf;
+  --aud-light:   #f5f3ff;
+  --aud-accent:  #ff6b35;
+  --aud-bg:      #f4f5fb;
+  --aud-surface: #ffffff;
+  --aud-muted:   #6b7280;
+  --aud-border:  #e8eaf0;
+  --aud-text:    #0f0e17;
+  --aud-shadow:  0 4px 18px rgba(15,14,23,0.07);
+  --aud-radius:  16px;
+}
+
+.auditorPage { background: var(--aud-bg); min-height: 100vh; }
+
+.auditorHero {
+  background: linear-gradient(135deg, var(--aud-brand) 0%, var(--aud-dark) 50%, #2d1a8a 100%);
+  border-radius: var(--aud-radius);
+  padding: 1.6rem 1.75rem;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(124,58,237,0.32);
+  position: relative;
+  overflow: hidden;
+}
+.auditorHero::before {
+  content: '';
+  position: absolute;
+  top: -50px; right: -50px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,107,53,0.22) 0%, transparent 70%);
+  pointer-events: none;
+}
+.auditorHero::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; left: 40%;
+  width: 140px; height: 140px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  pointer-events: none;
+}
+
+.auditorHeroIcon {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.18);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 1.2rem;
+}
+
+.auditorHeroTitle {
+  font-family: 'Syne', sans-serif;
+  color: #fff; font-weight: 800;
+  letter-spacing: -0.03em; margin: 0;
+  position: relative; z-index: 1;
+}
+
+.auditorInfoAlert {
+  border-radius: var(--aud-radius);
+  border: 1px solid var(--aud-border);
+  background: var(--aud-surface);
+  box-shadow: var(--aud-shadow);
+}
+
+.auditorSectionCard {
+  background: var(--aud-surface);
+  border: 1px solid var(--aud-border);
+  border-radius: var(--aud-radius);
+  box-shadow: var(--aud-shadow);
+  overflow: hidden;
+}
+
+.auditorSectionHead {
+  padding: 1rem 1.4rem;
+  border-bottom: 1px solid #f0f1f6;
+  background: #fafbff;
+}
+
+.auditorSectionBody { padding: 1.4rem; }
+
+.auditorRefreshBtn {
+  border: 1.5px solid var(--aud-border) !important;
+  color: var(--aud-muted) !important;
+  background: transparent !important;
+  border-radius: 10px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease;
+}
+.auditorRefreshBtn:hover {
+  background: var(--aud-light) !important;
+  color: var(--aud-brand) !important;
+  border-color: #a78bfa !important;
+  transform: translateY(-1px);
+}
+
+.auditorDomainCard {
+  background: var(--aud-surface);
+  border: 1px solid var(--aud-border);
+  border-radius: var(--aud-radius);
+  box-shadow: var(--aud-shadow);
+  height: 100%;
+  transition: all 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+.auditorDomainCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--aud-brand), var(--aud-accent));
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+.auditorDomainCard:hover {
+  border-color: #a78bfa;
+  box-shadow: 0 8px 28px rgba(124,58,237,0.12);
+  transform: translateY(-3px);
+}
+.auditorDomainCard:hover::before { opacity: 1; }
+
+.auditorDomainCard .auditorDomainTop {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 12px;
+}
+
+.auditorDomainBadge {
+  width: 42px; height: 42px;
+  border-radius: 12px;
+  background: var(--aud-light);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; color: var(--aud-brand); font-size: 1.1rem;
+}
+
+.auditorStatusChip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border-radius: 999px;
+  border: 1px solid var(--aud-border);
+  background: #f4f5fb; color: #374151;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600; font-size: 0.72rem; letter-spacing: 0.03em;
+}
+
+.auditorPrimaryBtn {
+  background: linear-gradient(135deg, var(--aud-brand) 0%, var(--aud-dark) 100%) !important;
+  color: #fff !important; border: none !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important; border-radius: 10px !important;
+  padding: 0.6rem 1.1rem !important; font-size: 0.875rem !important;
+  box-shadow: 0 3px 12px rgba(124,58,237,0.30);
+  transition: all 0.22s ease;
+}
+.auditorPrimaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124,58,237,0.42) !important;
+}
+
+.auditorMetricsTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--aud-muted);
+}
+
+.auditorMetricRow {
+  padding: 0.7rem 0.9rem; border-radius: 10px;
+  border: 1px solid #f0f1f6; background: #fafbff;
+}
+
+.auditorMetricKey { color: var(--aud-muted); font-size: 0.78rem; font-weight: 600; }
+.auditorMetricVal { color: var(--aud-text);  font-size: 0.82rem; font-weight: 700; }
+
+.auditorAuditCard {
+  background: var(--aud-surface);
+  border: 1px solid var(--aud-border);
+  border-radius: var(--aud-radius);
+  box-shadow: var(--aud-shadow);
+  transition: all 0.22s ease;
+}
+.auditorAuditCard:hover {
+  border-color: #a78bfa;
+  box-shadow: 0 8px 28px rgba(124,58,237,0.12);
+  transform: translateY(-3px);
+}
+
+.auditorAuditHeader { padding: 1rem 1.4rem 0; }
+.auditorAuditMeta   { padding: 0 1.4rem 1rem; }
+
+.auditorAuditKeyLabel {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem; color: var(--aud-muted);
+  font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+.auditorAuditId {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800; color: var(--aud-text); letter-spacing: -0.02em;
+}
+
+.auditorFindingsText { color: #374151; line-height: 1.55; font-size: 0.875rem; }
+
+.auditorEmpty {
+  background: #fafbff;
+  border: 2px dashed #d0d4e0;
+  border-radius: var(--aud-radius);
+  padding: 3rem 1.5rem;
+  text-align: center; color: var(--aud-muted);
+}
+
+.auditorModalContent {
+  border-radius: 24px !important;
+  border: 1px solid var(--aud-border) !important;
+  box-shadow: 0 24px 80px rgba(15,14,23,0.18) !important;
+}
+
+.auditorModalHeader {
+  padding: 1.2rem 1.5rem !important;
+  border-bottom: 1px solid #f0f1f6 !important;
+  background: #fafbff;
+}
+
+.auditorModalTitle {
+  font-family: 'Syne', sans-serif;
+  color: var(--aud-brand); font-weight: 800; letter-spacing: -0.03em;
+}
+
+.auditorModalFooter { border-top: 1px solid #f0f1f6 !important; }
+
+.auditorModalPrimary {
+  background: linear-gradient(135deg, var(--aud-brand) 0%, var(--aud-dark) 100%) !important;
+  border: none !important; border-radius: 10px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  box-shadow: 0 3px 12px rgba(124,58,237,0.30);
+  transition: all 0.22s ease;
+}
+.auditorModalPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124,58,237,0.42) !important;
+}
